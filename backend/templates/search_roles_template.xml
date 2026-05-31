@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:soap:functions:mc-style">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <urn:GracIdmRoleSearchServices xmlns:n0="urn:sap-com:document:sap:soap:functions:mc-style">
+            <RoleDesc></RoleDesc>
+            <RoleName>{RoleName}</RoleName>
+            <Tcode>{Tcode}</Tcode>
+        </urn:GracIdmRoleSearchServices>
+    </soapenv:Body>
+</soapenv:Envelope>

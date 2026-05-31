@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:soap:functions:mc-style">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <urn:GracIdmUserAsignmtServices xmlns:n0="urn:sap-com:document:sap:soap:functions:mc-style">
+            <Language>EN</Language>
+            <System>{System}</System>
+            <UserId>{UserId}</UserId>
+        </urn:GracIdmUserAsignmtServices>
+    </soapenv:Body>
+</soapenv:Envelope>

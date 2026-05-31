@@ -1,0 +1,99 @@
+{
+  "operations": {
+    "user_status": {
+      "endpoint": "http://localhost:3001/user-status",
+      "template-path": "templates/user_status_template.xml",
+      "method": "POST",
+      "fields": [
+        {
+          "name": "ReqNo",
+          "required": true,
+          "source": "user",
+          "default-value": ""
+        }
+      ]
+    },
+    "search-roles": {
+      "endpoint": "http://localhost:3001/search-roles",
+      "template-path": "templates/search_roles_template.xml",
+      "method": "POST",
+      "fields": [
+        {
+          "name": "RoleName",
+          "required": true,
+          "source": "user",
+          "default-value": ""
+        },
+        {
+          "name": "Tcode",
+          "required": false,
+          "source": "user",
+          "default-value": ""
+        }
+      ]
+    },
+    "get-existing-access": {
+      "endpoint": "http://localhost:3001/get-existing-access",
+      "template-path": "templates/get_existing_access_template.xml",
+      "method": "POST",
+      "fields": [
+        {
+          "name": "System",
+          "required": true,
+          "source": "user",
+          "default-value": "",
+          "type": "system-select"
+        },
+        {
+          "name": "UserId",
+          "required": true,
+          "source": "user",
+          "default-value": ""
+        }
+      ]
+    },
+    "request-role": {
+      "endpoint": "http://localhost:3001/request-role",
+      "template-path": "templates/request_role_template.xml",
+      "method": "POST",
+      "fields": [
+        {
+          "name": "Userid",
+          "required": true,
+          "source": "user",
+          "default-value": ""
+        },
+        {
+          "name": "RoleName",
+          "required": true,
+          "source": "user",
+          "default-value": ""
+        },
+        {
+          "name": "SystemName",
+          "required": true,
+          "source": "user",
+          "default-value": "",
+          "type": "system-select"
+        }
+      ]
+    }
+  },
+  "systems": [
+    {
+      "id": "P1",
+      "name": "Production",
+      "display": "P1 - Production"
+    },
+    {
+      "id": "D1",
+      "name": "Development",
+      "display": "D1 - Development"
+    },
+    {
+      "id": "Q1",
+      "name": "Quality",
+      "display": "Q1 - Quality"
+    }
+  ]
+}

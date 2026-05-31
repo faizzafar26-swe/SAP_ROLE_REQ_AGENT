@@ -1,0 +1,13 @@
+{
+  "conversation_history": [
+    {"role": "user", "content": "I want to request a role"},
+    {"role": "assistant", "content": "Which system should I request the role in? 1) P1 - Production, 2) D1 - Development, 3) Q1 - Quality."},
+    {"role": "user", "content": "P1 for user USJODUG"},
+    {"role": "assistant", "content": "Do you already have a role name, or would you like to search roles? Reply with \"role name\" or \"search roles.\""},
+    {"role": "user", "content": "search roles"},
+    {"role": "assistant", "content": "Would you like to search roles by tcode (option 1) or copy roles from another user (option 2)?"},
+    {"role": "user", "content": "option 1"},
+    {"role": "assistant", "content": "Please provide the transaction code (tcode) to search for roles."}
+  ],
+  "message": "se11"
+}
